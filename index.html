@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>p5.js project</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      background-color: #1b1b1b;
+    }
+    main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    /* canvas { */
+      /* margin: auto; */
+    /* } */
+    div:has( > svg) {
+        margin: auto;
+        position: relative;
+    }
+    #downloadDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    /* div { */
+      /* margin: auto; */
+      /* position: fixed;
+      left: 20px;
+      top: 20px;
+      z-index: 100;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
+    @keyframes blinker {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 100;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .blinking {
+      animation: blinker 3s step-start infinite;
+    }
+  </style>
+  <script src="../libraries//p5.min.js"></script>
+
+  <!-- Enable for SVG mode (disable p5.min.js above): -->
+  <!-- <script src="https://unpkg.com/p5@1.6"></script>
+  <script src="https://unpkg.com/p5.js-svg@1.5.1"></script> -->
+  
+  <!-- <script src="https://cdn.jsdelivr.net/npm/flatbush"></script> -->
+  <script src="../libraries/lib.js"></script>
+  <script src="../libraries/webm-muxer.js"></script>
+  <script src="../libraries/seedrandom.min.js"></script>
+  <script src="../libraries/flatbush.js"></script>
+  <script src="../libraries/rbush.js"></script>
+  <script src="../libraries/planck.min.js"></script>
+  <!-- <script src="https://unpkg.com/@flatten-js/core@1.6.2/dist/main.umd.js"></script> -->
+  <script src="../libraries/flatten.js"></script>
+  <!-- <script type="module">import Flatten</script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>

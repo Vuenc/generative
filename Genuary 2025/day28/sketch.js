@@ -6,7 +6,7 @@ let WEBGL_MODE = false;
 
 let NUM_LAYERS = 1;
 
-let TARGET_FRAMERATE = 30;
+let TARGET_FRAMERATE = 60;
 let GIF_LENGTH_SECONDS = 20;
 let RENDER_SPEEDUP = 1;
 let SHOW_TEXTS = {

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>p5.js project</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      height: 100vh;
+      background-color: #1b1b1b;
+    }
+    main {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+    }
+    canvas {
+      margin: auto;
+    }
+    div:has( > svg) {
+        margin: auto;
+        position: relative;
+    }
+    #downloadDiv {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #recordingDiv {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+    /* div { */
+      /* margin: auto; */
+      /* position: fixed;
+      left: 20px;
+      top: 20px;
+      z-index: 100;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
+    @keyframes blinker {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 100;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+    .blinking {
+      animation: blinker 3s step-start infinite;
+    }
+  </style>
+  <script src="../libraries//p5.min.js"></script>
+  <script src="../libraries/lib.js"></script>
+  <script src="../libraries/seedrandom.min.js"></script>
+  <script src="../libraries/webm-muxer.js"></script>
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <main>
+  </main>
+</body>
+
+</html>
